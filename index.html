@@ -76,16 +76,16 @@
       </div>
   </nav>
 
-    <section class="relative"> 
+    <section class="relative "> 
       <div class="carousel  w-full mb-20">
 
 
-          <div id="slide1" class="carousel-item relative w-full ">
+          <div id="slide1" class="carousel-item relative w-full h-full ">
             <img src="images/banner1.png" class="w-full " />
             <div class="absolute inset-0 bg-gray-900 bg-opacity-40"></div>
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               
-              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide4" class=" btn btn-circle">❮</a> 
               <div class="flex flex-col gap-6 text-center">
                   <h2 class="text-white lg:text-7xl">Exotic tastes at your <br>
                    doorstep</h2>
@@ -98,7 +98,7 @@
             
           </div> 
 
-          <div id="slide2" class="carousel-item relative w-full  ">
+          <!-- <div id="slide2" class="carousel-item relative w-full  ">
               <img src="images/banner2.png" class="w-full " />
               <div class="absolute inset-0 bg-gray-900 bg-opacity-40"></div>
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -150,11 +150,11 @@
               </div>
 
               
-            </div> 
+            </div>  -->
   
       </div>
 
-      <div class=" max-w-5xl mx-auto grid justify-center  grid-cols-5 text-center bg-white  lg:absolute bottom-5 left-64 right-64 rounded-lg">
+      <div class=" max-w-5xl   mx-auto  grid  justify-evenly gap-4 lg:grid-cols-5 text-center bg-white  lg:absolute bottom-5 left-64 right-64 rounded-lg"> 
         <div class="">
           <img src="images/fruit1.png" alt="">
           <p>Strawberry</p>
@@ -180,46 +180,46 @@
      </section> 
   </header>
         
-    <main class="">
+    <main class="max-w-6xl mx-auto">
        
 
        <section class="mt-20 mb-10">
         <div class="lg:flex justify-between">
-            <div class="flex-1 text-left">
-                <h3 class="text-5xl text-[#121212] font-bold mb-5">Deal of the day</h3>
-                <p class="text-base text-[#12121299]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            <div class="flex-1 text-center  lg:text-left">
+                <h3 class="text-2xl font-bold  lg:text-5xl  text-[#121212]  mb-5">Deal of the day</h3>
+                <p class="text-base mb-5 lg:mb-10 text-[#12121299]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
             <div class="flex-1 flex justify-evenly  text-center mb-20 lg:px-10 ">
                <div>
-                <h3 class="text-5xl font-extrabold">29</h3>
+                <h3 class="text-4xl lg:text-5xl font-extrabold">29</h3>
                 <p class="text-lg">Days</p>
               </div>
 
               <div class="text-3xl">:</div>
 
                <div>
-                <h3 class="text-5xl font-extrabold">15</h3>
+                <h3 class="text-4xl lg:text-5xl font-extrabold">15</h3>
                 <p class="text-lg">Hours</p>
                </div>
 
                <div class="text-3xl">:</div>
 
                <div>
-                <h3 class="text-5xl font-extrabold">25</h3>
+                <h3 class="text-4xl lg:text-5xl font-extrabold">25</h3>
                 <p class="text-lg">Minutes</p>
                </div>
 
                <div class="text-3xl">:</div>
 
                <div>
-                <h3 class="text-5xl font-extrabold">08</h3>
+                <h3 class="text-4xl lg:text-5xl font-extrabold">08</h3>
                 <p class="text-lg">seconds</p>
                </div>
             </div>
         </div>
 
         <!-- card -->
-        <div class="grid gap-6 text-center lg:grid-cols-4  ">
+        <div class="grid gap-6 text-center  lg:grid-cols-4  ">
 
           <div class="border space-y-5 pt-14 pb-4">
            <div>
@@ -241,7 +241,7 @@
           </div>
 
           <div class="border space-y-5 pt-10 ">
-            <div>
+            <div class="text-center">
               <img class="ml-12 " src="images/fruit7.png" alt="">
             </div>
             <h3>12.90$ - 18.85$</h3>
@@ -304,13 +304,13 @@
        </section> 
 
        <!-- meet the team section -->
-      <section class="bg-meet-them mt-40 h-screen bg-opacity-10">
+      <section class="bg-meet-them mt-40 ml-5 lg:h-screen bg-opacity-10">
         
          
        <div class="text-white text-center pt-40 pb-20">
 
-        <h2 class="text-5xl mb-6  font-extrabold">Meet the team section</h2>
-        <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+        <h2 class="text-xl lg:text-5xl mb-6  font-extrabold">Meet the team section</h2>
+        <p class="text-sm text-center px-5 lg:text-base">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
        </div>
        <div class="text-white  grid lg:grid-cols-4 pl-28 pb-20 ">
 
@@ -364,8 +364,12 @@
 
     </main>
    
-      <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded mt-20">
-        <div class="grid grid-flow-col gap-4">
+      <footer class="footer footer-center p-10 text-white bg-[#121212] text-base-content rounded mt-20">
+        <div class="flex">
+          <img src="images/logo.png" alt="">
+          <h2 class="text-4xl font-extrabold">Fruit Burst</h2>
+        </div>
+        <div class="leading-7  lg:text-lg grid grid-cols-3  lg:grid-cols-6 gap-0 lg:gap-4">
           <a class="link link-hover">Home</a> 
           <a class="link link-hover">About Us</a> 
           <a class="link link-hover">Shop</a> 
